@@ -1,0 +1,219 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 100vh;
+  color: #777;
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 400;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/charbw.png');
+  min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+  background-image: url('https://images.unsplash.com/photo-1493134799591-2c9eed26201a?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  opacity: 0.8;
+  min-height: 500px;
+}
+
+/* Third image */
+.bgimg-3 {
+  background-image: url('https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  min-height: 500px;
+}
+
+.container {
+  display: flex;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin: 20px 20px;
+  color: white;
+  background-color: #000;
+}
+
+#hero {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  background-color: #000;
+  padding: 24px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  margin: 40px;
+}
+
+.about-text {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.about-text h2 {
+  text-align: center;
+}
+.about-text img {
+  float: left;
+  margin-right: 1em;
+  max-width: 300px;
+  height: auto;
+}
+
+#bgimg-2,
+#bgimg-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: #616161;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  padding: 2px 10px 2px 10px;
+}
+
+#skills {
+  /*background-color: #f1f1f1;*/
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.progress-bar {
+  text-align: center;
+  margin: 10px;
+  width: 80vw;
+  background-color: #f1f1f1;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar-fill {
+  color: white;
+  display: block;
+  height: 25px;
+  background-color: #777;
+  border-radius: 3px;
+  transition: width 2s ease-in-out;
+}
+
+.tech-current {
+  display: none;
+}
+
+.tech-learning,
+.design {
+  display: none;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.project {
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 2px solid #777;*/
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.project img {
+  width: 80%;
+}
+
+.links a {
+  text-decoration: none;
+  color: #777;
+  padding: 10px;
+}
+
+.links a:hover {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  background-color: #777;
+}
+
+footer .links {
+  padding: 10px;
+}
+
+footer .links a {
+  color: white;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #616161;
+  padding: 40px;
+}
+
+button {
+  font-size: 24px;
+  color: #777;
+  font-family: 'Inter UI', sans-serif;
+  background-color: #f1f1f1;
+  border: 4px solid #fff;
+  margin-right: 15px;
+}
+
+button:hover {
+  border: 4px solid #777;
+  text-decoration: none;
+}
+
+.current {
+  color: black;
+}
