@@ -1,4 +1,7 @@
 console.log('Greetings Fellow Traveler');
+//burger menu
+const burg = document.querySelector('.burg');
+const menu = document.querySelector('.nav-links');
 
 // buttons for tech skills
 const current = document.querySelector('#current');
@@ -37,3 +40,15 @@ design.addEventListener('click', function() {
   designBars.classList.add('show');
   design.classList.add('current');
 });
+
+burg.addEventListener('click', function() {
+  console.log('Burger Clicked');
+  menu.classList.toggle('show');
+  animateMenu();
+});
+
+let animateMenu = () => {
+  document.querySelector('.burg1').classList.toggle('burgChange1');
+  document.querySelector('.burg2').classList.toggle('burgChange2');
+  document.querySelector('.burg3').classList.toggle('burgChange3');
+};
