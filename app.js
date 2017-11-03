@@ -1,4 +1,3 @@
-console.log('Greetings Fellow Traveler');
 //burger menu
 const burg = document.querySelector('.burg');
 const menu = document.querySelector('.nav-links');
@@ -42,7 +41,6 @@ design.addEventListener('click', function() {
 });
 
 burg.addEventListener('click', function() {
-  console.log('Burger Clicked');
   menu.classList.toggle('show');
   animateMenu();
 });
