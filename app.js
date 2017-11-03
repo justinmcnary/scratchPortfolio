@@ -40,11 +40,13 @@ design.addEventListener('click', function() {
   design.classList.add('current');
 });
 
+//Burger Menu
 burg.addEventListener('click', function() {
   menu.classList.toggle('show');
   animateMenu();
 });
 
+//Burger Menu Animation
 let animateMenu = () => {
   document.querySelector('.burg1').classList.toggle('burgChange1');
   document.querySelector('.burg2').classList.toggle('burgChange2');
